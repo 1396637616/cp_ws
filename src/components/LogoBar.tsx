@@ -7,6 +7,7 @@ export default function LogoBar() {
       alt="Wren AI"
       width={125}
       height={30}
+      style={{ position: 'relative', top: '-15px' }}
     />
   );
 }

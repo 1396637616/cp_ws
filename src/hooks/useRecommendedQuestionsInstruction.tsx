@@ -45,7 +45,7 @@ export default function useRecommendedQuestionsInstruction() {
 
   const [fetchRecommendationQuestions, recommendationQuestionsResult] =
     useGetProjectRecommendationQuestionsLazyQuery({
-      pollInterval: 2000,
+      pollInterval: 0,
     });
 
   const [generateProjectRecommendationQuestions] =
@@ -108,6 +108,8 @@ export default function useRecommendedQuestionsInstruction() {
   }, [recommendedQuestionsTask]);
 
   const onGetRecommendationQuestions = async () => {
+    console.log('797877987987979');
+
     setGenerating(true);
     setIsRegenerate(true);
     try {

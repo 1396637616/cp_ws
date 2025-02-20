@@ -154,7 +154,7 @@ const getData = (
     },
     {
       id: LEARNING.CONNECT_OTHER_DATA_SOURCES,
-      title: 'Connect to other data sources',
+      title: '连接其他数据源',
       href: 'https://docs.getwren.ai/oss/guide/connect/overview',
       onClick: () => saveRecord(LEARNING.CONNECT_OTHER_DATA_SOURCES),
     },
@@ -163,7 +163,7 @@ const getData = (
   const home = [
     {
       id: LEARNING.SWITCH_PROJECT_LANGUAGE,
-      title: 'Switch the language',
+      title: '切换语言',
       onClick: () =>
         $guide?.current?.play(
           LEARNING.SWITCH_PROJECT_LANGUAGE,
@@ -172,13 +172,13 @@ const getData = (
     },
     {
       id: LEARNING.SHARE_RESULTS,
-      title: 'Export to Excel/Sheets',
+      title: '导出excel/sheet',
       href: 'https://docs.getwren.ai/oss/guide/integrations/excel-add-in',
       onClick: () => saveRecord(LEARNING.SHARE_RESULTS),
     },
     {
       id: LEARNING.VIEW_FULL_SQL,
-      title: 'View full SQL',
+      title: '显示完整SQL',
       href: 'https://docs.getwren.ai/oss/guide/home/answer#view-sqlview-full-sql',
       onClick: () => saveRecord(LEARNING.VIEW_FULL_SQL),
     },
@@ -317,7 +317,7 @@ export default function SidebarSection(_props: Props) {
         >
           <div className="flex-grow-1">
             <ReadOutlined className="mr-1" />
-            Learning
+            更多操作
           </div>
           <RightOutlined
             className="text-sm"

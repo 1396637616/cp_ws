@@ -117,11 +117,9 @@ export default function RecommendedQuestionsPrompt(props: Props) {
       <div className="d-flex align-center mb-3">
         <Logo size={24} color="var(--gray-8)" />
         <div className="text-md text-medium gray-8 mx-3">
-          Know more about your data.
+          了解有关您的数据的更多信息.
         </div>
-        <div className="text-medium gray-7">
-          Try asking some of the following questions
-        </div>
+        <div className="text-medium gray-7">试着问以下几个问题</div>
       </div>
       <Space
         style={{ width: 680 }}

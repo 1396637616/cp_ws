@@ -6,10 +6,10 @@ export const getSettingMenu = (menu: SETTINGS) =>
   ({
     [SETTINGS.DATA_SOURCE]: {
       icon: DatabaseOutlined,
-      label: 'Data Source Settings',
+      label: '数据源设置',
     },
     [SETTINGS.PROJECT]: {
       icon: ProjectOutlined,
-      label: 'Project Settings',
+      label: '项目设置',
     },
   })[menu] || null;

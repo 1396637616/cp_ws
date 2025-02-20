@@ -141,11 +141,7 @@ export default function useRecommendedQuestionsInstruction() {
       ) : (
         <Icon component={CopilotSVG} className="geekblue-6" />
       ),
-      children: generating
-        ? 'Generating questions'
-        : showRetry
-          ? 'Retry'
-          : 'What could I ask?',
+      children: generating ? '提出问题' : showRetry ? '重试' : '我能问什么?',
     };
   }, [generating, isRegenerate, showRetry, showRecommendedQuestionsPromptMode]);
 

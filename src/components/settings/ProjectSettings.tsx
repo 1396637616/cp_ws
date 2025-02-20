@@ -58,15 +58,12 @@ export default function ProjectSettings(props: Props) {
         layout="vertical"
         initialValues={{ language: data.language }}
       >
-        <Form.Item
-          label="Project language"
-          extra="This setting will affect the language in which the AI responds to you."
-        >
+        <Form.Item label="语言设置" extra="此设置将影响 AI 响应您的语言.">
           <Row gutter={16} wrap={false}>
             <Col className="flex-grow-1">
               <Form.Item name="language" noStyle>
                 <Select
-                  placeholder="Select a language"
+                  placeholder="选择一种语言"
                   showSearch
                   options={languageOptions}
                 />
@@ -79,19 +76,19 @@ export default function ProjectSettings(props: Props) {
                 onClick={submit}
                 loading={loading}
               >
-                Save
+                保存
               </Button>
             </Col>
           </Row>
         </Form.Item>
       </Form>
-      <div className="gray-8 mb-2">Reset project</div>
+      <div className="gray-8 mb-2">重置项目</div>
       <Button type="primary" style={{ width: 70 }} danger onClick={reset}>
-        Reset
+        重置
       </Button>
       <div className="gray-6 mt-1">
-        Please be aware that resetting will delete all current settings and
-        records, including those in the Modeling Page and Home Page threads.
+        请注意，重置将删除所有当前设置和
+        记录，包括建模页面和主页线程中的设置和记录.
       </div>
     </div>
   );

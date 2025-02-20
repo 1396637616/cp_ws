@@ -252,7 +252,7 @@ const LanguageSwitcher = (props: { defaultValue: ProjectLanguage }) => {
 
   return (
     <>
-      <label className="d-block mb-2">Project language</label>
+      <label className="d-block mb-2">语言设置</label>
       <Select
         showSearch
         style={{ width: '100%' }}

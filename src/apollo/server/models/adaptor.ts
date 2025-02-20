@@ -23,16 +23,16 @@ export enum WrenAISystemStatus {
 }
 
 export enum WrenAILanguage {
-  EN = 'English',
-  ES = 'Spanish',
-  FR = 'French',
-  ZH_TW = 'Traditional Chinese',
-  ZH_CN = 'Simplified Chinese',
-  DE = 'German',
-  PT = 'Portuguese',
-  RU = 'Russian',
-  JA = 'Japanese',
-  KO = 'Korean',
+  EN = '英语',
+  ES = '西班牙语',
+  FR = '法语',
+  ZH_TW = '繁体中文',
+  ZH_CN = '简体中文',
+  DE = '德语',
+  PT = '葡萄牙语',
+  RU = '俄语',
+  JA = '日语',
+  KO = '韩语',
 }
 
 export interface DeployData {

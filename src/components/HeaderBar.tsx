@@ -41,7 +41,7 @@ export default function HeaderBar() {
     <StyledHeader>
       <div
         className="d-flex justify-space-between align-center"
-        style={{ marginTop: -2 }}
+        style={{ marginTop: -15 }}
       >
         <Space size={[48, 0]}>
           <LogoBar />
@@ -53,7 +53,7 @@ export default function HeaderBar() {
                 $isHighlight={pathname.startsWith(Path.Home)}
                 onClick={() => router.push(Path.Home)}
               >
-                Home
+                主页
               </StyledButton>
               <StyledButton
                 shape="round"
@@ -61,7 +61,7 @@ export default function HeaderBar() {
                 $isHighlight={pathname.startsWith(Path.Modeling)}
                 onClick={() => router.push(Path.Modeling)}
               >
-                Modeling
+                工作台
               </StyledButton>
             </Space>
           )}

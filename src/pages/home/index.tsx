@@ -29,7 +29,7 @@ const Wrapper = ({ children }) => {
     >
       <Logo size={48} color="var(--gray-8)" />
       <div className="text-md text-medium gray-8 mt-3">
-        Know more about your data
+        了解有关您的数据的更多信息
       </div>
       {children}
     </div>
@@ -74,14 +74,14 @@ function RecommendedQuestionsInstruction(props) {
       <Button className="mt-6" {...buttonProps} />
       {generating && (
         <Text className="mt-3 text-sm gray-6">
-          Thinking of good questions for you... (about 1 minute)
+          正在为您思考您的问题...（约 1 分钟）
         </Text>
       )}
       {!generating && showRetry && (
         <Text className="mt-3 text-sm gray-6 text-center">
-          We couldn't think of questions right now.
+          我们一时想不出什么问题。
           <br />
-          Let's try again later.
+          我们稍后再试。
         </Text>
       )}
     </Wrapper>

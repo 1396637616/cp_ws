@@ -26,14 +26,12 @@ export const makeDeleteModal =
         onClick={() =>
           Modal.confirm({
             autoFocusButton: null,
-            cancelText: 'Cancel',
-            content:
-              config?.content ||
-              'This will be permanently deleted, please confirm you want to delete it.',
+            cancelText: '取消',
+            content: config?.content || '这将被永久删除，请确认您是否要删除它.',
             icon: <ExclamationCircleOutlined />,
             okText: 'Delete',
             onOk: onConfirm,
-            title: `Are you sure you want to delete this ${config?.itemName}?`,
+            title: `您确定要删除 ${config?.itemName}?`,
             width: 464,
             ...modalProps,
             okButtonProps: {

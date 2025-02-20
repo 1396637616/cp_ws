@@ -24,18 +24,18 @@ export default function ViewTree(props: Props) {
 
   const onAddView = () => {
     Modal.info({
-      title: 'How to create a View?',
+      title: '如何创建视图？',
       content: (
         <div>
-          Pose your questions at{' '}
+          在
           <Link
             href={Path.Home}
             data-ph-capture="true"
             data-ph-capture-attribute-name="cta_add_view_navigate_to_home"
           >
-            homepage
+            主页
           </Link>
-          , and get some helpful answers to save as views.
+          提出您的问题 , 并获得一些有用的答案以保存为视图.
         </div>
       ),
       okButtonProps: {
@@ -46,7 +46,7 @@ export default function ViewTree(props: Props) {
   };
 
   const getViewGroupNode = createTreeGroupNode({
-    groupName: 'Views',
+    groupName: '视图',
     groupKey: 'views',
     actions: [
       {
@@ -59,7 +59,7 @@ export default function ViewTree(props: Props) {
             data-ph-capture="true"
             data-ph-capture-attribute-name="cta_add_view"
           >
-            New
+            添加视图
           </GroupActionButton>
         ),
       },

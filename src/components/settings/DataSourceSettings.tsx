@@ -143,7 +143,7 @@ const DataSourcePanel = (props: Props) => {
 
         <div className="py-2 text-right">
           <Button className="mr-2" style={{ width: 80 }} onClick={reset}>
-            Cancel
+            取消
           </Button>
           <Button
             type="primary"

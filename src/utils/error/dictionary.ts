@@ -1,102 +1,101 @@
 export const ERROR_TEXTS = {
   CONNECTION: {
     DISPLAY_NAME: {
-      REQUIRED: 'Please input display name.',
+      REQUIRED: '请输入显示名称.',
     },
     PROJECT_ID: {
-      REQUIRED: 'Please input project id.',
+      REQUIRED: '请输入项目ID.',
     },
     DATASET_ID: {
-      REQUIRED: 'Please input dataset ID.',
+      REQUIRED: '请输入数据集ID.',
     },
     CREDENTIAL: {
-      REQUIRED: 'Please upload credential.',
+      REQUIRED: '请上传凭证.',
     },
     INIT_SQL: {
-      REQUIRED: 'Please input initial SQL statements.',
+      REQUIRED: '请输入初始SQL语句.',
     },
     CONFIGURATION: {
       KEY: {
-        REQUIRED: 'Please input configuration key.',
+        REQUIRED: '请输入配置密钥.',
       },
       VALUE: {
-        REQUIRED: 'Please input configuration value.',
+        REQUIRED: '请输入配置值.',
       },
     },
     HOST: {
-      REQUIRED: 'Please input host.',
+      REQUIRED: '请输入host.',
       INVALID:
-        "Invalid host. Use 'host.docker.internal' on macOS/Windows to connect to the local database.",
+        'host无效。在 macOS/Windows 上使用“host.docker.internal”连接到本地数据库.',
     },
     PORT: {
-      REQUIRED: 'Please input port.',
+      REQUIRED: '请输入端口.',
     },
     USERNAME: {
-      REQUIRED: 'Please input username.',
+      REQUIRED: '请输入用户名.',
     },
     PASSWORD: {
-      REQUIRED: 'Please input password.',
+      REQUIRED: '请输入密码.',
     },
     DATABASE: {
-      REQUIRED: 'Please input database name.',
+      REQUIRED: '请输入数据库名称.',
     },
     SCHEMA: {
-      REQUIRED: 'Please input schema name.',
+      REQUIRED: '请输入架构名称.',
     },
     SCHEMAS: {
-      REQUIRED: 'Please input list of catalog.schema separated by comma.',
+      REQUIRED: '请输入 catalog.schema 列表，以逗号分隔.',
     },
     ACCOUNT: {
-      REQUIRED: 'Please input account.',
+      REQUIRED: '请输入帐号.',
     },
   },
   ADD_RELATION: {
     FROM_FIELD: {
-      REQUIRED: 'Please select a field.',
+      REQUIRED: '请选择一个字段.',
     },
     TO_FIELD: {
-      REQUIRED: 'Please select a field.',
+      REQUIRED: '请选择一个字段.',
     },
     RELATION_TYPE: {
-      REQUIRED: 'Please select a relationship type.',
+      REQUIRED: '请选择关系类型.',
     },
     RELATIONSHIP: {
-      EXIST: 'This relationship already exists.',
+      EXIST: '此关系已存在.',
     },
   },
   SETUP_MODEL: {
     TABLE: {
-      REQUIRED: 'Please select at least one table.',
+      REQUIRED: '请选择至少一张表.',
     },
   },
   SAVE_AS_VIEW: {
     NAME: {
-      REQUIRED: 'Please input view name.',
+      REQUIRED: '请输入视图名称.',
     },
   },
   MODELING_CREATE_MODEL: {
     TABLE: {
-      REQUIRED: 'Please select a table.',
+      REQUIRED: '请选择一张表.',
     },
     COLUMNS: {
-      REQUIRED: 'Please select at least one column.',
+      REQUIRED: '请选择至少一列.',
     },
     PRIMARY_KEY: {
-      INVALID:
-        'Please select again, the primary key must be one of the selected columns.',
+      INVALID: '请重新选择，主键必须是所选列之一.',
     },
   },
   CALCULATED_FIELD: {
     NAME: {
-      REQUIRED: 'Please input field name.',
+      REQUIRED: '请输入字段名称.',
     },
     EXPRESSION: {
-      REQUIRED: 'Please select an expression.',
+      REQUIRED: '请选择表达方式.',
     },
     LINEAGE: {
-      REQUIRED: 'Please select a field.',
-      INVALID_STRING_TYPE: 'Please select a string type field.',
-      INVALID_NUMBER_TYPE: 'Please select a number type field.',
+      REQUIRED: '请选择一个字段.',
+      INVALID_STRING_TYPE: '请选择字符串类型字段.',
+      INVALID_NUMBER_TYPE: '请选择数字类型字段.',
     },
   },
 };

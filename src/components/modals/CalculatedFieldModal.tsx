@@ -159,7 +159,7 @@ export default function AddCalculatedFieldModal(props: Props) {
             </Typography.Link>
           </div>
           <div>
-            <Button onClick={onClose}>Cancel</Button>
+            <Button onClick={onClose}>取消</Button>
             <Button type="primary" onClick={submit} loading={loading}>
               Save
             </Button>

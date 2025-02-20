@@ -98,12 +98,12 @@ export const executeModelCRUD = async (
   await expect(
     page
       .locator('div')
-      .filter({ hasText: /^Create a data model$/ })
+      .filter({ hasText: /^创建数据模型$/ })
       .first(),
   ).toBeVisible();
 
   // select resource table and some columns
-  await page.getByLabel('Select a table').click();
+  await page.getByLabel('选择数据表').click();
   await page
     .getByTitle(modelReferenceName, { exact: true })
     .locator('div')
@@ -117,7 +117,7 @@ export const executeModelCRUD = async (
   await page.getByRole('button', { name: 'right' }).click();
 
   // set primary key
-  await page.getByLabel('Select primary key').click();
+  await page.getByLabel('选择key').click();
   await page
     .locator('form')
     .getByTitle(primaryKeyColumn, { exact: true })

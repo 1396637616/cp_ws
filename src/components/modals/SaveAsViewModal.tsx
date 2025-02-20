@@ -55,7 +55,7 @@ export default function SaveAsViewModal(props: Props) {
             </Text>
           </div>
           <div>
-            <Button onClick={onClose}>Cancel</Button>
+            <Button onClick={onClose}>取消</Button>
             <Button type="primary" onClick={submit} loading={loading}>
               Save
             </Button>

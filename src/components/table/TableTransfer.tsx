@@ -22,11 +22,11 @@ const StyledTable = styled(Table)`
 export const defaultColumns = [
   {
     dataIndex: 'name',
-    title: 'Column Name',
+    title: '名称',
   },
   {
     dataIndex: 'type',
-    title: 'Column Type',
+    title: '类型',
     render: (type: string) => <Tag>{type.toUpperCase()}</Tag>,
   },
 ];

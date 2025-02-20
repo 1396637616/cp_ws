@@ -93,7 +93,7 @@ export default function ModelTree(props: Props) {
   };
 
   const getModelGroupNode = createTreeGroupNode({
-    groupName: 'Models',
+    groupName: '模型',
     groupKey: 'models',
     actions: [
       {
@@ -121,7 +121,7 @@ export default function ModelTree(props: Props) {
             size="small"
             onClick={() => onOpenModelDrawer()}
           >
-            New
+            添加模型
           </GroupActionButton>
         ),
       },

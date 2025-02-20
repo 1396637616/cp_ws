@@ -140,7 +140,7 @@ export default function ModelForm(props: Props) {
         {!isUpdateMode && (
           <div>
             <Form.Item
-              label="Select a table"
+              label="选择数据表"
               name={FormFieldKey.SOURCE_TABLE}
               required
               rules={[
@@ -152,7 +152,7 @@ export default function ModelForm(props: Props) {
             >
               <Select
                 getPopupContainer={(trigger) => trigger.parentElement!}
-                placeholder="Select a table"
+                placeholder="选择数据表"
                 showSearch
                 loading={dataSourceTablesLoading}
                 disabled={isUpdateMode}
@@ -164,7 +164,7 @@ export default function ModelForm(props: Props) {
         )}
         <Loading spinning={isUpdateMode ? dataSourceTablesLoading : false}>
           <Form.Item
-            label="Select columns"
+            label="选择列"
             name={FormFieldKey.COLUMNS}
             rules={[
               {
@@ -184,13 +184,13 @@ export default function ModelForm(props: Props) {
               }
               leftColumns={defaultColumns}
               rightColumns={defaultColumns}
-              titles={['Available Columns', 'Target Columns']}
+              titles={['可用列', '目标列']}
               showSearch
             />
           </Form.Item>
         </Loading>
         <Form.Item
-          label="Select primary key"
+          label="选择key"
           name={FormFieldKey.PRIMARY_KEY}
           rules={[
             {
@@ -200,7 +200,7 @@ export default function ModelForm(props: Props) {
         >
           <Select
             getPopupContainer={(trigger) => trigger.parentElement!}
-            placeholder="Select a column"
+            placeholder="选择一列"
             showSearch
             allowClear
           >

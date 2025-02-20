@@ -311,7 +311,7 @@ const playSwitchProjectLanguageGuide = (
           }
         },
         showButtons: ['next', 'close'],
-        nextBtnText: 'Submit',
+        nextBtnText: '提交',
         onCloseClick: () => {
           $driver.destroy();
           window.sessionStorage.setItem('skipSwitchProjectLanguageGuide', '1');

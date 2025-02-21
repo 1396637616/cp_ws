@@ -48,6 +48,7 @@ const PromptStyle = styled.div`
   margin-left: calc(-340px + 133px);
   bottom: 18px;
   z-index: 999;
+  border-radius: 8px;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -200,12 +201,13 @@ export default forwardRef<Attributes, Props>(function Prompt(props, ref) {
   );
 
   return (
-    <PromptStyle className="d-flex align-end bg-gray-2 p-3 border border-gray-3 rounded">
+    <PromptStyle className="d-flex align-end bg-gray-2 p-3 border border-gray-3 ">
       <Input.TextArea
         ref={$promptInput}
         // disable grammarly
         data-gramm="false"
-        size="large"
+        className="rounded"
+        size="middle"
         autoSize
         placeholder="告诉我你想要了解的信息"
         value={inputValue}
@@ -215,7 +217,7 @@ export default forwardRef<Attributes, Props>(function Prompt(props, ref) {
       />
       <PromptButton
         type="primary"
-        size="large"
+        size="middle"
         className="ml-3"
         onClick={submitAsk}
         disabled={isProcessing}

@@ -6,7 +6,7 @@ export default function LogoBar() {
       <Image src="/images/canpan.gif" alt="Wren AI" width={32} height={32} />
       <span
         style={{
-          fontSize: '22px',
+          fontSize: '20px',
           color: '#ffffff',
           fontFamily: 'fantasy',
           verticalAlign: 'middle',

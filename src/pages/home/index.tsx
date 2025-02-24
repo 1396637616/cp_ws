@@ -74,7 +74,7 @@ function RecommendedQuestionsInstruction(props) {
       <Button className="mt-6" {...buttonProps} />
       {generating && (
         <Text className="mt-3 text-sm gray-6">
-          正在为您思考您的问题...（约 1 分钟）
+          正在思考您的问题...（约 1 分钟）
         </Text>
       )}
       {!generating && showRetry && (

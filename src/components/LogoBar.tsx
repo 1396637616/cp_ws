@@ -2,11 +2,20 @@ import Image from 'next/image';
 
 export default function LogoBar() {
   return (
-    <Image
-      src="/images/logo-white-with-text.svg"
-      alt="Wren AI"
-      width={125}
-      height={30}
-    />
+    <div>
+      <Image src="/images/canpan.gif" alt="Wren AI" width={32} height={32} />
+      <span
+        style={{
+          fontSize: '22px',
+          color: '#ffffff',
+          fontFamily: 'fantasy',
+          verticalAlign: 'middle',
+          letterSpacing: '2px',
+          marginLeft: '2px',
+        }}
+      >
+        参盘问数
+      </span>
+    </div>
   );
 }

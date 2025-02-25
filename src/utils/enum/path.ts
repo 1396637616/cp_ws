@@ -6,4 +6,5 @@ export enum Path {
   OnboardingConnection = '/setup/connection',
   OnboardingModels = '/setup/models',
   OnboardingRelationships = '/setup/relationships',
+  Login = '/login',
 }

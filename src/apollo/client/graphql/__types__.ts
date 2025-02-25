@@ -1256,3 +1256,8 @@ export type ViewWhereUniqueInput = {
 export type WhereIdInput = {
   id: Scalars['Int'];
 };
+
+export type LoginInput = {
+  username: Scalars['String'];
+  password: Scalars['String'];
+};
